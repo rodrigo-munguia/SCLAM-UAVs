@@ -1,14 +1,13 @@
 
 # Hybrid VSLAM
 
-Ros 2 implementation of the visual-based SLAM approach described in the paper:
+Ros 2 implementation of the Simultaneous Control Localization and Mapping (SCLAM) approach described in the paper:
 
-"Monocular-based SLAM for Mobile Robots: Filtering-Optimization Hybrid Approach" 
+"A SCLAM System for UAVs in GPS-denied Environments" 
+ 
 
-**IMPORTANT:** *Note that this software is currently under development.!!*  
+![](figures/Graphical_abstract.png)
 
-![](figures/quad_exp.png)
-![](figures/quad_exp_2.png)
 
 The Hybrid VSLAM is composed of the following ROS 2 components and nodes (See https://docs.ros.org/en/galactic/Concepts/About-Composition.html):
 
@@ -16,14 +15,17 @@ The Hybrid VSLAM is composed of the following ROS 2 components and nodes (See ht
 
 **ROS 2 components:** 
 
--  **Local SLAM** (*Implemented*). The local SLAM component implements a filter-based visual-based SLAM system with state vector-size bounded to maintain real-time operation. By itself, this component produces up-to metric scale (world referenced) estimates of both, the robot state, and a local map of features. But in this case, since old features are removed from the vector state, to maintain real-time operation, previously visited areas of the environment can not be recognized, and thus the accumulated position drift can not be corrected by the same process alone.
-- **Global SLAM** (*Implemented*). The Global SLAM component takes as input  Key-frames produced by the local SLAM process to create and maintain a global and persistent map of the environment as well as correct the accumulated drift when loops are detected. This component makes use of optimization-based techniques such as bundle adjustment and graph-based SLAM.
-- **Plot** (*Implemented*). The plot component implements a 3d scene of the robot's pose and trajectory as well as a map of visual features.
-- **Dataset** (*Implemented*). This component emulates an actual robot driver by reading the dataset files and publishing the robot sensor data to ROS topics.
+-  **Local SLAM** The local SLAM component implements a filter-based, visual SLAM system with a state vector size constrained to ensure real-time operation. On its own, this component generates up-to-metric-scale (world-referenced) estimates of both the robot's state and a local feature map. However, because older features are removed from the state vector to maintain real-time performance, previously visited areas of the environment cannot be recognized. Consequently, the accumulated positional drift cannot be corrected by this process alone.
+- **Global SLAM** The global SLAM component processes keyframes produced by the local SLAM system to construct and maintain a global, persistent map of the environment. It also corrects accumulated drift when loops are detected. This component employs optimization-based techniques, such as bundle adjustment and graph-based SLAM, to achieve its objectives.
+-  **Control**  The control component implements the following high-level control strategies as described in the paper: (i) waypoint control, (ii) visual marker-based control, (iii) area exploration, and (iv) return-to-home.
+-  **Webot package** Defines the virtual environment (world) used for experiments, including the UAV (robot) and its low-level controller, simulated using the Webots platform.
+-  **Webot bridge** This component interfaces certain sensor readings from the virtual robot with the format required by the SCLAM system.
+- **Plot** The plot component implements a 3d scene of the robot's pose and trajectory as well as a map of visual features.
+
 
 **ROS 2 nodes:**
 
-- **Keyboard** (*Implemented*). Implements a simple command-line interface to interact with the Hybrid VSLAM application.
+- **Keyboard** Implements a simple command-line interface to interact with the Hybrid VSLAM application.
 
 
 **Dependencies** (Tested in: Ubuntu 20.04)**:**
@@ -40,44 +42,37 @@ The Hybrid VSLAM is composed of the following ROS 2 components and nodes (See ht
 
 4.- GTSAM c++ library (tested with version 4.1.1) https://gtsam.org/
 
+5.- Webots Simulator (tested with version R2023a) https://cyberbotics.com/
+
 **Usage:**
 
 1.- Use colcon for compiling the project  (in the root project folder):  
 ```
-foo@bar:~/home/Hybrid_VLSAM$ colcon build
+source /opt/ros/galactic/setup.bash
+colcon build --packages-select interfaces
+. install/setup.bash
+colcon build
+colcon build
 ```
-2.- Reassemble and extract the sample dataset included in folder /Dataset_sample:
-```
-foo@bar:~/home/Hybrid_VLSAM/Dataset_sample$ cat dataset.tar.gz* | tar xzvf 
- ```
- 3.- In a text editor open the file "params.yaml" located in the folder "config", and set the parameter "Dataset_path:" with the absolute path of the extracted dataset folder. Example:
- ```
- Dataset_path: /home/Hybrid_VLSAM/Dataset_sample/2023-3-27-11-47/
-``` 
-4.-  In the root project folder open a terminal and source the overlay:
-```
-foo@bar:~/home/Hybrid_VLSAM$ . install/setup.bash
-```
-5.- In the same terminal run the Hybrid SLAM using the launch file "launch/slam.launch.py". At this point, a graphical interface must be opened.
-```
-foo@bar:~/home/Hybrid_VLSAM$ ros2 launch launch/quad_slam.launch.py
-```
-6.- In the root project folder open a second terminal and source the overlay: 
-```
-foo@bar:~/home/Hybrid_VLSAM$ . install/setup.bash
-```
-7.- Run the keyboard interface node:
-```
-foo@bar:~/home/Hybrid_VLSAM$ ros2 run keyboard keyboard_node
-```
-At this point, the following menu must appear in the console:
-```
-| Dataset commands :
-|   'q' to quit.
-|   'p'-> Play/Pause  r-> Reset
-|   '-'-> zoom out '+' ->  zoom in '1'-> x-y view '2' -> x-z view  '3'->y-z view
-|   '8'-> view up '5' ->  view down '4'-> view left '6' -> view right  'c'-> clear plot
-```
-8.- Press the key "p".
 
-*Notes on the sample dataset:* The parameters can be modified in the configuration file /config/quad_params.yaml to change the results and performance of the method. 
+2.- After successfully compiling, launch the components using:
+```
+./launch.sh
+```
+At this point, the following elements must be launched: (i) the Webots virtual world, (ii) Viz-viewer, (iii) a terminal displaying the state of the Webots component, and (iv) a terminal showing the following menu:
+```
+|   'q' to quit.
+|   's'-> Start/Stop SLAM          w-> Reset Control-SLAM
+|   'a'-> Start/Stop Control Plan                
+|   '-'-> zoom out '+' ->  zoom in '1'-> x-y view '2' -> x-z view  '3'->y-z view
+|   '8'-> view up '5' ->  view down '4'-> view left '6' -> view right  '7'-> clear plot
+|   '9'-> save screenshot '0' -> log statistics
+|   't'-> TakeOff / landing 
+|         r (forward)                  i (up)         
+| d (left)          g(right)   j(turn L)     l (turn R) 
+|         f (back)                     k(down)   
+```
+3.- In the last terminal, press the "a" key to start the control plan (the control plan can be modified in the control_plan.txt file).
+
+
+*Notes:* The system parameters can be modified in the configuration file /config/quad_params.yaml to adjust the method's results and performance.

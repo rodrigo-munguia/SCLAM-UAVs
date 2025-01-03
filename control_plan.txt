@@ -1,19 +1,16 @@
 TakeOff
-pointV,0,0,2,0
+pointV,0,0,3,0
 StartSLAM
-ActivateVisualUpdate
+pointa,-5,0,3,0
+StartUncertainty
+pointa,-25,0,3,0
+ExploreArea, 5, 15
+pointa,-15,15,3,0
+pointa,-15,0,3,0
+GoHome
 pointa,0,0,3,0
-pointa,0,0,3,1
-pointa,0,0,3,-1
-pointa,0,0,3,0
-pointa,2,0,3,0
-pointa,2,2,3,0
-pointa,0,2,3,0
-pointa,0,0,3,0
-pointa,2,0,3,0
-pointa,2,2,3,0
-pointa,0,2,3,0
-pointa,0,0,3,0
+StopSLAM
+Land
 
 
 

@@ -3,5 +3,3 @@ log/*
 build/*
 .vscode/*
 Dataset_sample/*
-/*.png
-/*.csv

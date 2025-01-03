@@ -1,0 +1,43 @@
+"""webots_ros2 package setup file."""
+
+from setuptools import setup
+
+
+package_name = 'webot_package'
+data_files = []
+data_files.append(('share/ament_index/resource_index/packages', ['resource/' + package_name]))
+data_files.append(('share/' + package_name + '/launch', ['launch/robot_launch.py']))
+data_files.append(('share/' + package_name + '/worlds', [
+    'worlds/mars.wbt','worlds/hall.wbt','worlds/.mavic_world.wbproj','worlds/marker23.png'
+]))
+data_files.append(('share/' + package_name + '/resource', [
+    'resource/webot_robot.urdf'
+]))
+data_files.append(('share/' + package_name, ['package.xml']))
+
+
+setup(
+    name=package_name,
+    version='2023.0.3',
+    packages=[package_name],
+    data_files=data_files,
+    install_requires=['setuptools', 'launch'],
+    zip_safe=True,
+    author='Cyberbotics',
+    author_email='support@cyberbotics.com',
+    maintainer='Cyberbotics',
+    maintainer_email='support@cyberbotics.com',
+    keywords=['ROS', 'Webots', 'Robot', 'Simulation', 'Examples'],
+    classifiers=[
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: Apache Software License',
+        'Programming Language :: Python',
+        'Topic :: Software Development',
+    ],
+    description='Mavic 2 Pro robot ROS2 interface for Webots.',
+    license='Apache License, Version 2.0',
+    tests_require=['pytest'],
+    entry_points={
+        'launch.frontend.launch_extension': ['launch_ros = launch_ros']
+    }
+)

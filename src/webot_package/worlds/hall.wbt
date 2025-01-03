@@ -1,0 +1,4202 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/BakelitePlastic.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/manhole/protos/SquareManhole.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Plaster.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/ElectricConduit.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/geometries/protos/Extrusion.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/FlexibleAluminiumDuct.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/tables/protos/Desk.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/computers/protos/Monitor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/stairs/protos/StraightStairs.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/GalvanizedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/stairs/protos/StraightStairsRail.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/OsbWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/PerforatedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/MattePaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/DoorLever.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/pipes/protos/PipeSection.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/pipes/protos/LJoint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/GlossyPaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/garden/protos/Wheelbarrow.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/obstacles/protos/OilBarrel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/WorkBarrier.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/TrafficCone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/EyeScrew.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/CapScrew.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/ThreadMetalPlate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/PaintBucket.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/ElectricalPlug.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/Washer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/MetalPipePaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/fire_extinguisher/protos/FireExtinguisher.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/telephone/protos/OfficeTelephone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/PlatformCart.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/PlasticCrate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/shapes/protos/TexturedBoxShape.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Asphalt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/Window.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/Radiator.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/CorrugatedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/WireFence.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Pavement.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/pallet/protos/WoodenPallet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/lights/protos/DoubleFluorescentLamp.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/chairs/protos/WoodenChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/chairs/protos/OfficeChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+
+WorldInfo {
+  info [
+    "This example uses some of the industrial objects included in Webots to create a factory hall."
+    "The tools, valves and doors are interactive."
+    "This means that a robot could grab a hammer, turn a valve handle, climb the stairs or open a door."
+  ]
+  title "A factory hall environment"
+  basicTimeStep 8
+  defaultDamping Damping {
+    linear 0.5
+    angular 0.5
+  }
+  contactProperties [
+    ContactProperties {
+      material1 "tube insertion exercise"
+      material2 "tube insertion exercise"
+      coulombFriction [
+        0.5
+      ]
+      softCFM 1e-05
+    }
+  ]
+}
+DEF VIEWPOINT Viewpoint {
+  orientation 0.3786654145019416 0.46868375338812457 -0.7980902475096989 1.586526928652201
+  position -1.4017966704674891 13.088305563536133 8.697417491706661
+  ambientOcclusionRadius 1
+}
+Mavic2Pro {
+  translation 1.45 7.54 0.05521959206607137
+  rotation 0 0 1 4.71239
+  name "webot_robot"
+  controller "<extern>"
+  cameraSlot [
+    DistanceSensor {
+      rotation 0 1 0 1.5707
+      name "ds0"
+      lookupTable [
+        0 0 0
+        0.02 0 0.2
+        10 10 0.2
+      ]
+      aperture 0.1
+    }
+    Camera {
+      rotation 0 1 0 1.5708
+      fieldOfView 1.57
+      width 400
+      height 240
+      near 0.2
+      noise 0.005
+    }
+  ]
+}
+Solid {
+  translation 1.45 7.54 0.01
+  rotation 0 0 1 4.71239
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "marker23.png"
+          ]
+        }
+      }
+      geometry Plane {
+      }
+    }
+    SolidBox {
+      translation 0 0 -0.001
+      size 1 1 0.001
+    }
+  ]
+  name "tag"
+}
+TexturedBackground {
+  texture "factory"
+  skybox FALSE
+}
+Floor {
+  translation 0 0.14 0
+  size 6.95 22.54
+  tileSize 2 2
+  appearance BakelitePlastic {
+    color "braun"
+  }
+}
+Transform {
+  translation 4.985 3.2 0
+  children [
+    Shape {
+      appearance BakelitePlastic {
+        color "braun"
+      }
+      geometry IndexedFaceSet {
+        coord Coordinate {
+          point [
+            1.51 3.15 0
+            1.51 -3.15 0
+            -1.51 3.15 0
+            -1.51 -3.15 0
+          ]
+        }
+        texCoord TextureCoordinate {
+          point [
+            0 0
+            3.15 0
+            0 1.51
+            3.15 1.51
+          ]
+        }
+        coordIndex [
+          0, 2, 3, 1, -1
+        ]
+        texCoordIndex [
+          0, 2, 3, 1, -1
+        ]
+      }
+    }
+  ]
+}
+SquareManhole {
+  translation 1.45 -8.06 -0.048
+  rotation 0 0 1 4.712388966
+}
+SquareManhole {
+  translation -1.45 -8.06 -0.048
+  rotation 0 0 1 4.712388966
+  name "manhole(0)"
+}
+SquareManhole {
+  translation 1.45 7.54 -0.048
+  rotation 0 0 -1 -1.5707953071795862
+  name "manhole(1)"
+}
+SquareManhole {
+  translation -1.51 7.54 -0.048
+  rotation 0 0 -1 -1.5707953071795862
+  name "manhole(2)"
+}
+DEF ROOF Transform {
+  translation 0 -5.72 4.76
+  rotation 1 0 0 3.1415926631795865
+  children [
+    Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 5.6 3.55
+        }
+      }
+      geometry Plane {
+        size 7.1 11.17
+      }
+    }
+  ]
+}
+DEF ROOF Transform {
+  translation 1.52 5.545 3.652
+  rotation 0 1 0 3.141592644
+  children [
+    Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 5.7 5.05
+        }
+      }
+      geometry Plane {
+        size 10.1 11.36
+      }
+    }
+  ]
+}
+DEF ROOF Transform {
+  translation 0 -0.1349 4.202
+  rotation 0 -0.7071067761007919 0.7071067862723032 3.1415926603708004
+  children [
+    Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.55 3.55
+        }
+      }
+      geometry Plane {
+        size 7.1 1.0999999999999999
+      }
+    }
+  ]
+}
+Solid {
+  translation -2.03 1.5 0.249282
+  rotation 0 0.2588180265806127 0.9659260992006155 3.14159
+  children [
+    Shape {
+      appearance ElectricConduit {
+        textureTransform TextureTransform {
+          rotation 1.5708
+          scale 1 3
+        }
+      }
+      geometry Extrusion {
+        crossSection [
+          6.1232339957368e-17 -1
+          0.25881904510252 -0.96592582628907
+          0.5 -0.86602540378444
+          0.70710678118655 -0.70710678118655
+          0.86602540378444 -0.5
+          0.96592582628907 -0.25881904510252
+          1 0
+          0.96592582628907 0.25881904510252
+          0.86602540378444 0.5
+          0.70710678118655 0.70710678118655
+          0.5 0.86602540378444
+          0.25881904510252 0.96592582628907
+          6.1232339957368e-17 1
+          -0.25881904510252 0.96592582628907
+          -0.5 0.86602540378444
+          -0.70710678118655 0.70710678118655
+          -0.86602540378444 0.5
+          -0.96592582628907 0.25881904510252
+          -1 1.2246467991474e-16
+          -0.96592582628907 -0.25881904510252
+          -0.86602540378444 -0.5
+          -0.70710678118655 -0.70710678118655
+          -0.5 -0.86602540378444
+          -0.25881904510252 -0.96592582628907
+          6.1232339957368e-17 -1
+        ]
+        spine [
+          0 -0.1 -0.2
+          0 0 0
+          0 4.9 -0.03
+          0 5 -0.2
+          0 5.2 -0.3
+        ]
+        scale [
+          0.1 0.1
+        ]
+        ccw FALSE
+        creaseAngle 0.5
+        splineSubdivision 6
+      }
+    }
+  ]
+  name "solid(7)"
+}
+Solid {
+  translation 3.34 11.13 3.4692821714666238
+  rotation -0.7071067811862364 0 0.7071067811862364 3.14159
+  children [
+    Shape {
+      appearance FlexibleAluminiumDuct {
+        textureTransform TextureTransform {
+          rotation 1.5708
+          scale 0 7
+        }
+      }
+      geometry Extrusion {
+        crossSection [
+          6.1232339957368e-17 -1
+          0.25881904510252 -0.96592582628907
+          0.5 -0.86602540378444
+          0.70710678118655 -0.70710678118655
+          0.86602540378444 -0.5
+          0.96592582628907 -0.25881904510252
+          1 0
+          0.96592582628907 0.25881904510252
+          0.86602540378444 0.5
+          0.70710678118655 0.70710678118655
+          0.5 0.86602540378444
+          0.25881904510252 0.96592582628907
+          6.1232339957368e-17 1
+          -0.25881904510252 0.96592582628907
+          -0.5 0.86602540378444
+          -0.70710678118655 0.70710678118655
+          -0.86602540378444 0.5
+          -0.96592582628907 0.25881904510252
+          -1 1.2246467991474e-16
+          -0.96592582628907 -0.25881904510252
+          -0.86602540378444 -0.5
+          -0.70710678118655 -0.70710678118655
+          -0.5 -0.86602540378444
+          -0.25881904510252 -0.96592582628907
+          6.1232339957368e-17 -1
+        ]
+        spine [
+          0 0 0
+          0.1 11 0
+          0 11.3 0
+          -0.3 11.5 0
+          -1.15 11.5 0
+          -1.15 11.9 0.01
+          -1.15 16.9 0
+          -1.15 17.1 0.13
+          -1.12 17.1 3.7
+        ]
+        scale [
+          0.1 0.1
+        ]
+        ccw FALSE
+        creaseAngle 0.5
+        splineSubdivision 12
+      }
+    }
+  ]
+  name "solid(8)"
+}
+Desk {
+  translation 4.10055 1.74225 0
+}
+Desk {
+  translation 4.10429 2.96281 0
+  name "desk(1)"
+}
+Monitor {
+  translation 3.89076 3.1515 0.71
+}
+Monitor {
+  translation 3.89076 4.1015 0.8
+  name "monitor(4)"
+}
+Monitor {
+  translation 3.89076 2.6615 0.71
+  name "monitor(1)"
+}
+Transform {
+  translation 3.89076 1.4715 0.71
+  scale 1.5 1.5 1.5
+  children [
+    Monitor {
+      translation 0 0.18 0
+      name "monitor(2)"
+    }
+  ]
+}
+DEF PLATFORM Transform {
+  translation -1.85 1.31 0
+  children [
+    DEF STAIRS Transform {
+      children [
+        StraightStairs {
+          translation -0.67 0 0
+          rotation 0 0 1 -1.5708
+          name "straight stairs(1)"
+          stepSize 0.3 1.2 0.03
+          stepRise 0.1667
+          nSteps 14
+          stepAppearance GalvanizedMetal {
+            textureTransform TextureTransform {
+              scale 0.3 1
+            }
+          }
+          stringerAppearance GalvanizedMetal {
+            textureTransform TextureTransform {
+              scale 4 8
+            }
+          }
+          leftRail [
+            StraightStairsRail {
+              run 4.2
+              rise 2.338
+              balusterHeight 0.5
+              balusterRadius 0.019
+              nBalusters 3
+              appearance GalvanizedMetal {
+                textureTransform TextureTransform {
+                  scale 4 8
+                }
+              }
+            }
+          ]
+          rightRail [
+            StraightStairsRail {
+              run 4.2
+              rise 2.338
+              balusterHeight 0.5
+              balusterRadius 0.019
+              nBalusters 3
+              appearance GalvanizedMetal {
+                textureTransform TextureTransform {
+                  scale 4 8
+                }
+              }
+            }
+          ]
+        }
+        StraightStairs {
+          translation 0.65 0 0
+          rotation 0 0 1 -1.5707953071795862
+          stepSize 0.3 1.4 0.03
+          stepRise 0.1667
+          nSteps 14
+          stepAppearance GalvanizedMetal {
+            textureTransform TextureTransform {
+              scale 0.3 1
+            }
+          }
+          stringerAppearance GalvanizedMetal {
+            textureTransform TextureTransform {
+              scale 4 8
+            }
+          }
+          leftRail [
+            StraightStairsRail {
+              run 4.2
+              rise 2.338
+              balusterHeight 0.5
+              balusterRadius 0.019
+              nBalusters 3
+              appearance GalvanizedMetal {
+                textureTransform TextureTransform {
+                  scale 4 8
+                }
+              }
+            }
+          ]
+          rightRail []
+        }
+        Solid {
+          translation 0.66 -1.823472431941421 1.254671277331213
+          rotation -1 0 0 0.507
+          children [
+            DEF SHAPE Shape {
+              appearance OsbWood {
+                textureTransform TextureTransform {
+                  scale 1 3
+                }
+              }
+              geometry Box {
+                size 1.4 5.19 0.02
+              }
+            }
+          ]
+          name "box(1)"
+          model "box"
+          boundingObject USE SHAPE
+        }
+      ]
+    }
+    Transform {
+      translation 0 -4.15 0
+      children [
+        Solid {
+          translation 0 0 1.25
+          children [
+            DEF SHAPE Shape {
+              appearance OsbWood {
+                textureTransform TextureTransform {
+                  scale 2 1.6
+                }
+              }
+              geometry Box {
+                size 3.24 0.04 2.5
+              }
+            }
+          ]
+          name "box(2)"
+          model "box"
+          boundingObject USE SHAPE
+        }
+        Solid {
+          translation 0 -3.21 1.25
+          children [
+            DEF SHAPE Shape {
+              appearance OsbWood {
+                textureTransform TextureTransform {
+                  scale 2 1.6
+                }
+              }
+              geometry Box {
+                size 3.24 0.04 2.5
+              }
+            }
+          ]
+          name "box(4)"
+          model "box"
+          boundingObject USE SHAPE
+        }
+        Solid {
+          translation -1.6 -1.61 1.25
+          rotation 0 0 -1 1.5707963603591728
+          children [
+            DEF SHAPE Shape {
+              appearance OsbWood {
+                textureTransform TextureTransform {
+                  scale 2 1.6
+                }
+              }
+              geometry Box {
+                size 3.24 0.04 2.5
+              }
+            }
+          ]
+          name "box(3)"
+          model "box"
+          boundingObject USE SHAPE
+        }
+        Solid {
+          translation 0 -1.6 2.48
+          rotation -0.5773502553479516 0.5773502747262953 -0.57735027749463 2.094395119003205
+          children [
+            DEF SHAPE Shape {
+              appearance PerforatedMetal {
+                textureTransform TextureTransform {
+                  scale 3 3
+                }
+              }
+              geometry Box {
+                size 3.234 0.042 3.238
+              }
+            }
+          ]
+          name "box(8)"
+          model "box"
+          boundingObject USE SHAPE
+        }
+        Solid {
+          translation 1.6 -1.61 2.25
+          rotation 0 0 1 4.712388966
+          children [
+            DEF SHAPE Shape {
+              appearance OsbWood {
+                textureTransform TextureTransform {
+                  scale 2 0.3
+                }
+              }
+              geometry Box {
+                size 3.24 0.04 0.5
+              }
+            }
+          ]
+          name "box(5)"
+          model "box"
+          boundingObject USE SHAPE
+        }
+        Solid {
+          translation 1.6 -0.14 1
+          rotation 0 0 1 4.712388966
+          children [
+            DEF SHAPE Shape {
+              appearance OsbWood {
+                textureTransform TextureTransform {
+                  scale 0.15 1
+                }
+              }
+              geometry Box {
+                size 0.24 0.04 2
+              }
+            }
+          ]
+          name "box(6)"
+          model "box"
+          boundingObject USE SHAPE
+        }
+        Solid {
+          translation 1.6 -2.27 1
+          rotation 0 0 1 4.712388966
+          children [
+            DEF SHAPE Shape {
+              appearance OsbWood {
+                textureTransform TextureTransform {
+                }
+              }
+              geometry Box {
+                size 1.84 0.04 2
+              }
+            }
+          ]
+          name "box(7)"
+          model "box"
+          boundingObject USE SHAPE
+        }
+        Door {
+          translation 1.47 -0.81 0
+          size 0.2 1.1 2
+          position -8.389630217094755e-07
+          jointAtLeft FALSE
+          selfClosing TRUE
+          doorAppearance MattePaint {
+            baseColor 0.793332 0.689235 0.584421
+          }
+          frameAppearance MattePaint {
+            baseColor 0.976669 0.930236 0.875746
+          }
+          doorHandle DoorLever {
+            canTurn TRUE
+            jointAtLeft FALSE
+            appearance BrushedAluminium {
+              colorOverride 0.180392 0.203922 0.211765
+            }
+          }
+        }
+        StraightStairsRail {
+          translation 1.6 0 2.5
+          rotation 0 0 1 -1.5707953071795862
+          run 3.21
+          rise 0
+          balusterHeight 0.5
+          balusterRadius 0.019
+          nBalusters 3
+          appearance GalvanizedMetal {
+            textureTransform TextureTransform {
+              scale 8 13
+            }
+          }
+        }
+        StraightStairsRail {
+          translation 1.6 -3.21 2.5
+          rotation 0 0 -1 3.14159
+          name "straight stairs rail(1)"
+          run 3.21
+          rise 0
+          balusterHeight 0.5
+          balusterRadius 0.019
+          nBalusters 3
+          appearance GalvanizedMetal {
+            textureTransform TextureTransform {
+              scale 8 13
+            }
+          }
+        }
+        StraightStairsRail {
+          translation -1.2699999538251452 0 2.5
+          rotation 0 0 -1 3.14159
+          name "straight stairs rail(2)"
+          run 0.33
+          rise 0
+          balusterHeight 0.5
+          nBalusters 0
+          appearance GalvanizedMetal {
+          }
+        }
+        StraightStairsRail {
+          translation 1.6 0 2.5
+          rotation 0 0 1 4.712388966
+          name "straight stairs rail(3)"
+          run 0.22999999999999998
+          rise 0
+          balusterHeight 0.5
+          nBalusters 0
+          appearance GalvanizedMetal {
+          }
+        }
+        PipeSection {
+          translation 1.7 2.62 1.779
+          rotation 0 0 1 3.141592653589811
+          height 2.895
+          radius 0.06
+          appearance DEF GREEN_PIPE_APPEARANCE PBRAppearance {
+            baseColor 0.15 0.45 0.19
+            roughnessMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/plastic_roughness.jpg"
+              ]
+            }
+            metalness 0
+          }
+        }
+        PipeSection {
+          translation 1.7 3.39 0.65
+          rotation 0 0 1 3.141592653589811
+          name "pipe section(18)"
+          height 0.63
+          radius 0.06
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.7 -3.432 1.77
+          rotation 0 0 1 3.141592653589811
+          name "pipe section(2)"
+          height 2.875
+          radius 0.06
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.855 -3.16354 0.11
+          rotation -0.1861570160863869 -0.6947470600351803 -0.6947460600350939 -2.7734953071795863
+          name "pipe section(10)"
+          height 0.19
+          radius 0.06
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 2.005 -2.51126 1.49
+          rotation 0 -0.7071067811865053 -0.7071067811865053 3.14159
+          name "pipe section(12)"
+          height 0.33
+          radius 0.06
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.7 3.005 0.106
+          rotation 0 -0.7071067811865053 -0.7071067811865053 3.14159
+          name "pipe section(13)"
+          height 0.33
+          radius 0.06
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 2.01 -2.89508 0.8
+          rotation 0 0 1 2.618
+          name "pipe section(11)"
+          height 0.95
+          radius 0.06
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.7 2.535 3.344
+          rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+          scale 2 2 2
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.7 2.705 0.196
+          rotation 0 0 1 1.5708
+          name "L joint pipe(18)"
+          scale 2 2 2
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.7 3.305 0.196
+          rotation 0.577349935856137 -0.577349935856137 0.5773509358560258 2.09439
+          name "L joint pipe(19)"
+          scale 2 2 2
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.7 3.475 1.096
+          rotation -0.5773509358554485 0.5773509358554485 0.5773489358556708 2.0944
+          name "L joint pipe(27)"
+          scale 2 2 2
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.7 -0.4 3.43
+          rotation 0 -0.7071080832499715 -0.7071054791207261 3.1415926603707884
+          name "pipe section(1)"
+          height 5.6
+          radius 0.06
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.7 -3.335 3.344
+          rotation 0.5773502691896258 -0.5773502691896258 -0.5773502691896258 -2.094395307179586
+          name "L joint pipe(1)"
+          scale 2 2 2
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.7433 -3.36 0.196
+          rotation 0 0 1 1.0472
+          name "L joint pipe(13)"
+          scale 2 2 2
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.9683 -2.9703 0.196
+          rotation 0.44721407003194 -0.7745961212986637 0.44721407003194 1.82348
+          name "L joint pipe(14)"
+          scale 2 2 2
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.0083 -2.8103 1.406
+          rotation -0.5773489358533613 0.5773489358533613 0.5773529358529169 2.09439
+          name "L joint pipe(15)"
+          scale 2 2 2
+          appearance USE GREEN_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.7 -2.425 0.65
+          rotation 0 1 0 3.141592644
+          name "pipe section(4)"
+          height 0.66
+          radius 0.06
+          appearance DEF ORANGE_PIPE_APPEARANCE PBRAppearance {
+            baseColor 0.663 0.381 0.0973
+            roughnessMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/plastic_roughness.jpg"
+              ]
+            }
+            metalness 0
+          }
+        }
+        PipeSection {
+          translation 2.29 -2.425 0.65
+          rotation 0 1 0 3.141592644
+          name "pipe section(9)"
+          height 0.66
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.7 -3.035 1.578
+          rotation 0 1 0 3.141592644
+          name "pipe section(7)"
+          height 2.495
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.7 -2.735 0.11
+          rotation 0 -0.7071067811865476 0.7071067811865476 3.14159
+          name "pipe section(6)"
+          height 0.16
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 2.15034 2.84862 0.106
+          rotation 0 -0.7071067811865476 0.7071067811865476 3.14159
+          name "pipe section(14)"
+          height 0.77
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.50148 3.49906 0.503872
+          rotation 1 0 0 -2.3562053071795863
+          name "pipe section(15)"
+          height 0.91
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 2.14148 3.45932 0.546622
+          rotation 1 0 0 -2.3562053071795863
+          name "pipe section(17)"
+          height 0.8
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.827 3.01861 0.986247
+          rotation 0.5773506025225371 0.5773496025232256 -0.5773506025225371 -2.094395307179586
+          name "pipe section(16)"
+          height 0.2
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 2 -2.425 1.2
+          rotation 0.5773506025225371 0.5773496025232256 -0.5773506025225371 -2.094395307179586
+          name "pipe section(8)"
+          height 0.16
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.7 2.236 1.582
+          rotation 0 -1 0 3.141592644
+          name "pipe section(5)"
+          height 2.505
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        PipeSection {
+          translation 1.7 -0.4 3.05
+          rotation 0 -0.7071080832499715 -0.7071054791207261 3.1415926603707884
+          name "pipe section(3)"
+          height 4.84
+          radius 0.06
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.701 -2.947 2.966
+          rotation 0.5773502691896258 -0.5773502691896258 -0.5773502691896258 -2.094395307179586
+          name "L joint pipe(2)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.701 -2.947 0.196
+          rotation 0 0 1 1.5708
+          name "L joint pipe(4)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.701 -2.337 0.196
+          rotation 0 0 1 1.5708
+          name "L joint pipe(9)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.291 -2.337 0.196
+          rotation 0 0 1 1.5708
+          name "L joint pipe(11)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.791 -2.427 1.116
+          rotation 0 1 0 1.5708
+          name "L joint pipe(10)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.211 -2.427 1.116
+          rotation 0 1 0 3.14159
+          name "L joint pipe(12)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.781 -2.517 0.106
+          rotation 1 0 0 1.57079
+          name "L joint pipe(5)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.051 -2.347 0.105998
+          rotation 0 0.7071087811825714 0.7071047811838092 -3.1415853071795863
+          name "L joint pipe(6)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.051 -2.077 0.105996
+          rotation 0.5773509358554485 -0.5773509358554485 -0.5773489358556708 2.09439
+          name "L joint pipe(7)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.781 -2.077 0.105996
+          rotation 1 0 0 1.57079
+          name "L joint pipe(8)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.701 2.153 2.966
+          rotation 0.7071067811865476 -0.7071067811865476 0 3.14159
+          name "L joint pipe(3)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.78858 2.23862 0.196
+          name "L joint pipe(16)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.06034 2.32862 0.106
+          rotation -0.577349935856137 -0.577349935856137 0.5773509358560258 2.09439
+          name "L joint pipe(17)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.06034 3.36862 0.106
+          rotation 0 -0.7071062811861719 0.7071072811865696 3.14159
+          name "L joint pipe(20)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.787 3.544 0.106
+          rotation -1 0 0 1.5708
+          name "L joint pipe(22)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.787 3.814 0.106
+          rotation 0.5773489358533613 -0.5773489358533613 0.5773529358529169 -2.094395307179586
+          name "L joint pipe(23)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.057 3.83521 0.169639
+          rotation 0 -0.3826799838200994 0.923880960937852 3.14159
+          name "L joint pipe(24)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 2.057 3.07861 0.926247
+          rotation -0.6786002809392172 -0.28108011636663005 0.6785982809383893 2.59356
+          name "L joint pipe(25)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.587 3.07861 0.926247
+          rotation -1 0 0 2.3562
+          name "L joint pipe(26)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+        LJoint {
+          translation 1.50034 3.97251 0.147965
+          rotation -0.357405946367489 -0.357405946367489 -0.8628568705192763 1.71777
+          name "L joint pipe(21)"
+          scale 2 2 2
+          appearance USE ORANGE_PIPE_APPEARANCE
+        }
+      ]
+    }
+    Cabinet {
+      translation -1.6 -6.22 2.5
+      layout [
+        "RightSidedDoor (1, 1, 1, 5, 1.5)"
+        "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+      ]
+      primaryAppearance GlossyPaint {
+        baseColor 0.729 0.741 0.713
+      }
+      secondaryAppearance GlossyPaint {
+        baseColor 0.729 0.741 0.713
+      }
+    }
+    Cabinet {
+      translation -1.6 -5.41 2.5
+      name "cabinet(1)"
+      layout [
+        "RightSidedDoor (1, 1, 1, 5, 1.5)"
+        "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+      ]
+      primaryAppearance GlossyPaint {
+        baseColor 0.729 0.741 0.713
+      }
+      secondaryAppearance GlossyPaint {
+        baseColor 0.729 0.741 0.713
+      }
+    }
+    CardboardBox {
+      translation 8.01252 -0.24907 0.2
+      rotation 0 0 1 3.14159
+      size 0.4 0.4 0.4
+    }
+    CardboardBox {
+      translation 8.0337 0.0541 0.59
+      name "cardboard box(6)"
+      size 0.4 0.4 0.4
+    }
+    CardboardBox {
+      translation 8.0301 0.26803 0.2
+      rotation 0 0 -1 -1.5707953071795862
+      name "cardboard box(7)"
+      size 0.4 0.4 0.4
+    }
+    CardboardBox {
+      translation -1.2825 -5.9185 4.2
+      rotation 0 0 1 3.14159
+      name "cardboard box(5)"
+      size 0.4 0.4 0.4
+    }
+    CardboardBox {
+      translation -1.3277980869527313 -4.754589199285645 3.790876160677266
+      rotation -0.001071332569771959 -0.0011812943924318336 0.9999987283942332 3.1415220735378524
+      name "cardboard box(4)"
+      size 0.4 0.4 0.4
+      mass 2
+    }
+    CardboardBox {
+      translation -1.2825 -6.3585 4.2
+      rotation 0 0 1 3.14159
+      name "cardboard box(1)"
+      size 0.4 0.4 0.4
+    }
+    CardboardBox {
+      translation -1.2865494231041832 -4.657821740842179 2.794297361142868
+      rotation 5.8131420746048085e-05 -0.001649655728313441 0.9999986376274299 1.5706938352735635
+      name "cardboard box(2)"
+      mass 10
+    }
+    CardboardBox {
+      translation -1.2861905592524874 -4.704914151702616 3.3418645675198726
+      rotation 0.9999994298577305 -3.364774518882136e-05 0.0010673106592511282 -3.139239383476637
+      name "cardboard box(3)"
+      size 0.5 0.5 0.5
+      mass 4
+    }
+  ]
+}
+Wheelbarrow {
+  translation -1.61129 -5.16038 0
+}
+OilBarrel {
+  translation -2.65298 -5.37394 0.44
+}
+OilBarrel {
+  translation -2.40571 -4.30235 0.44
+  rotation 0 0 1 -1.5707953071795862
+  name "oil barrel(1)"
+}
+OilBarrel {
+  translation -2.95216 -3.51384 0.44
+  rotation -0.5773489358533613 -0.5773489358533613 0.5773529358529169 -2.094395307179586
+  name "oil barrel(2)"
+}
+OilBarrel {
+  translation -2.28666 -3.52921 0.44
+  rotation 0 0 1 -1.5707953071795862
+  name "oil barrel(3)"
+}
+WorkBarrier {
+  translation -1.85608 -4.9145 0
+}
+TrafficCone {
+  translation -3.04111 -4.77977 0
+}
+Cabinet {
+  translation -2.70511 11.1138 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(2)"
+  rowsHeights [
+    2
+  ]
+  columnsWidths [
+    0.5, 0.17, 0.4
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 1, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 1, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+PaintBucket {
+  translation 0.628712606255488 10.814001752190496 0.02841867133126426
+  rotation 0.11223942068076288 -0.9936811901248026 6.955143976363122e-05 0.00679543730542636
+}
+PaintBucket {
+  translation 0.36871036520757666 10.873992351772237 0.028417731384870012
+  rotation -0.002455511240513272 -0.008538921800026113 -0.9999605278604955 0.7854250182228899
+  name "paint bucket(1)"
+}
+PaintBucket {
+  translation -0.921305850757501 10.874007697090935 0.02841867133209084
+  rotation 0.003534202317179533 -0.0010171265331601691 0.9999932374109322 2.356199717091599
+  name "paint bucket(2)"
+}
+DEF ELECTRIC_PLUG Solid {
+  translation 0.1649667664351947 10.870716471512315 0.04795972911203966
+  rotation 0.09391174321114598 0.6500776909348289 0.7540421607814013 2.930160609271278
+  children [
+    ElectricalPlug {
+      rotation 0 0 1 6.283185307179586
+    }
+    Connector {
+      rotation 0 0 1 3.141592644
+      type "passive"
+      autoLock TRUE
+      distanceTolerance 0.005
+      numberOfRotations 2
+      tensileStrength 5
+    }
+  ]
+  name "plug"
+  boundingObject Transform {
+    translation -0.01 0 0
+    children [
+      Sphere {
+        radius 0.01
+      }
+    ]
+  }
+  physics Physics {
+    centerOfMass [
+      -0.0191 0 0
+    ]
+  }
+}
+ElectricalPlug {
+  translation 0.4928754027415988 10.708920012397822 0.7279611693198601
+  rotation -0.6484538247301176 0.49586841399595294 -0.5776003403686847 1.8547637747724426
+  name "electrical plug(1)"
+}
+EyeScrew {
+  translation 0.613144382389169 10.742122517498881 0.759990310632293
+  rotation -0.24967568087538705 0.9351399921763639 0.25134687070222667 1.6382725029697205
+}
+CapScrew {
+  translation 0.7236174554541581 10.758987648966333 0.7198817964839934
+  rotation -0.0377135274827198 0.01653693973647055 0.999151749970425 2.6315109506553824
+}
+Washer {
+  translation 0.8131 10.7422 0.72
+  rotation 0 1 0 -1.5707953071795862
+  appearance MetalPipePaint {
+  }
+  innerRadius 0.014
+}
+Solid {
+  translation -1.0051099680245885 10.783897310274602 1.8752403338231203
+  rotation -0.9999999988756109 2.381141383464459e-05 -4.100969451324421e-05 0.022463481312087516
+  children [
+    DEF SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.82745 0.843137 0.8117647
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.7 0.02 0.056
+      }
+    }
+  ]
+  name "solid(6)"
+  contactMaterial "tube insertion exercise"
+  boundingObject USE SHAPE
+  physics Physics {
+    density -1
+    mass 20
+  }
+}
+Cabinet {
+  translation -3.0077 -11.1117 0
+  rotation 0 0 -1 -1.5707953071795862
+  name "cabinet(9)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.7411 0.7137
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.7411 0.7137
+  }
+}
+Cabinet {
+  translation -2.18771 -11.1117487 0
+  rotation 0 0 -1 -1.5707953071795862
+  name "cabinet(3)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 6.468667801240305 4.3470132184 0
+  rotation 0 0 1 3.14159
+  name "cabinet(5)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 5.86766 6.24849 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(13)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 5.86766 6.24849 1.5
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(16)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 5.06766 6.24849 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(14)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 5.06766 6.24849 1.5
+  rotation 0 0 -1 1.5708
+  name "cabinet(15)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 6.4666 3.433726 0
+  rotation 0 0 1 3.14159
+  name "cabinet(8)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 6.48031 2.55073 0
+  rotation 0 0 1 3.14159
+  name "cabinet(7)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 5.92043 0.04786 0
+  rotation 0 0 1 1.5708
+  name "cabinet(6)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 5.92043 0.04786 1.5
+  rotation 0 0 1 1.5708
+  name "cabinet(11)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 5.12043 0.04786 0
+  rotation 0 0 1 1.5708
+  name "cabinet(10)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+Cabinet {
+  translation 5.12043 0.04786 1.5
+  rotation 0 0 1 1.5708
+  name "cabinet(12)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+DEF FIRST_AID_BOX Transform {
+  translation -3.48771 -9.92174 1.26
+  rotation 0 0 1 3.141592644
+  children [
+    Cabinet {
+      rotation 0 0 1 3.14159
+      name "cabinet(4)"
+      depth 0.2
+      rowsHeights [
+        0.35
+      ]
+      columnsWidths [
+        0.3
+      ]
+      layout [
+        "LeftSidedDoor (1, 1, 1, 1, 1.5)"
+      ]
+      primaryAppearance GlossyPaint {
+        baseColor 0.729 0.741 0.713
+      }
+      secondaryAppearance GlossyPaint {
+        baseColor 0.729 0.741 0.713
+      }
+    }
+    Transform {
+      translation -0.202 0 0.2
+      rotation 0.7071067761007916 0 -0.7071067862723035 3.1415926603708013
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/first_aid.jpg"
+              ]
+            }
+            roughness 1
+            metalness 0
+          }
+          geometry Plane {
+            size 0.15 0.15
+          }
+        }
+      ]
+    }
+  ]
+}
+FireExtinguisher {
+  translation 3.373799998204151 6.384510015063223 -0.004708884595486462
+  rotation 4.839489438106723e-05 0.003971076825716171 0.9999921140722953 -2.8797953363954183
+}
+DEF FIRE_EXTINGUISHER_PANEL Transform {
+  translation 3.572 6.07451 1.98
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/fire_extinguisher_panel.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+  ]
+}
+FireExtinguisher {
+  translation 3.249 11.08469 0.58
+  rotation 0 0 1 4.974188353
+  name "fire extinguisher(2)"
+  enablePhysics FALSE
+}
+OfficeTelephone {
+  translation 1.69587 11.0762 1.099
+  rotation -0.25056300542381216 -0.25056300542381216 0.9351130202419243 -1.6378353071795866
+  enablePhysics FALSE
+}
+FireExtinguisher {
+  translation -3.3605280021639916 -9.65374301501476 -0.004708884595486296
+  rotation 0.9897806631475667 -0.14259817270625444 -1.0054449376431685e-09 0.007874813560368532
+  name "fire extinguisher(1)"
+}
+Table {
+  translation 3.01946 0.012172 0
+  size 0.8 1.8 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Table {
+  translation 0.7117 -10.739284 0
+  rotation 0 0 1 4.712388966
+  name "table(3)"
+  size 0.7 1.6 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Table {
+  translation -1.0769924642441946 -10.7594 0
+  rotation 0 0 1 4.712388966
+  name "table(2)"
+  size 0.7 1.3 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.9125 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.3411 0.325
+  }
+}
+OfficeTelephone {
+  translation 3.229997901907142 -0.7059968559130698 0.7031570827031293
+  rotation -0.00029282404631800663 0.00042947825196611964 0.9999998649012455 3.1415893534980763
+  name "telephone(2)"
+}
+Table {
+  translation 3.01946 1.86217 0
+  name "table(1)"
+  size 0.8 1.8 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Table {
+  translation 4.03194 4.16704 0
+  name "table(4)"
+  size 0.6 0.9 0.8
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+PlatformCart {
+  translation 3.1464428694596744 3.29588350323219 -0.0038025300008897034
+  rotation 0.0004491464891015489 -0.0012459734153581154 -0.999999122908455 1.5708492318065883
+}
+PlasticCrate {
+  translation 3.17549499553388 3.4285505200075366 0.09985781829701987
+  rotation -0.4626390545203402 -0.8860797692784916 -0.028770604927608898 0.0017206927819443574
+  size 0.6 0.4 0.3
+  mass 2
+}
+PlasticCrate {
+  translation 3.175489536479744 3.038550622427158 0.10016828259173087
+  rotation -0.4669179986642667 -0.883818342170722 -0.029201379521393334 0.0017156132883607603
+  name "plastic crate(1)"
+  size 0.6 0.35 0.3
+  mass 2
+}
+PlatformCart {
+  translation 2.887194986826343 4.170400219592061 -0.005408376121461583
+  rotation 0.00034683149127956605 -0.0013389221684335835 0.9999990434972144 3.141589116322664
+  name "platform cart(1)"
+}
+WoodenBox {
+  translation 2.8625355919990936 4.125648956813141 0.3941368866719889
+  rotation 0.9932393052135142 0.11608440751138686 -0.0003048142153628773 0.006069209389808441
+  name "wooden box(1)"
+  mass 12
+}
+Transform {
+  translation -3.4777 -9.9217 2.43
+  rotation 0 0 1 0.785398161
+  children [
+    TexturedBoxShape {
+      size 0.15 0.15 0.15
+      textureUrl [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/first_aid.jpg"
+      ]
+      textureMapping "default"
+    }
+  ]
+}
+Wall {
+  translation -3.575 -3.835 0
+  size 0.2 7.4 4.76
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 3.7 2.4
+    }
+  }
+}
+Wall {
+  translation -7.375 -0.235 0
+  rotation 0 0 1 4.712388966
+  name "wall(21)"
+  size 0.2 7.4 4.76
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 3.7 2.4
+    }
+  }
+}
+Transform {
+  translation -7.98 6.2 0
+  children [
+    Shape {
+      appearance Asphalt {
+        textureTransform TextureTransform {
+          scale 3.25 2.25
+        }
+      }
+      geometry Plane {
+        size 9 13
+      }
+    }
+  ]
+}
+Wall {
+  translation 3.575 -0.682 0
+  name "wall(8)"
+  size 0.2 1.1 4.76
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.55 2.4
+    }
+  }
+}
+Wall {
+  translation 3.575 -7.082 0
+  name "wall(11)"
+  size 0.2 8.1 4.76
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 4.05 2.4
+    }
+  }
+}
+DEF DOUBLE_DOOR Solid {
+  translation 3.575 -2.132 0
+  rotation 0 0 1 6.283185307179586
+  children [
+    Solid {
+      translation 0 0 3.38
+      children [
+        Shape {
+          appearance Plaster {
+            textureTransform TextureTransform {
+              scale 0.9 1.35
+            }
+          }
+          geometry Box {
+            size 0.2 1.8 2.76
+          }
+        }
+      ]
+      name "mobile part"
+      boundingObject Box {
+        size 0.2 1.8 2.76
+      }
+    }
+    Solid {
+      translation 0 0 1.975
+      rotation 0 0 1 -3.1415853071795863
+      children [
+        Shape {
+          appearance DEF DOUBLE_DOOR_APPEARANCE GlossyPaint {
+            baseColor 0.579 0.52 0.473
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.15 0.85 0.025
+                -0.15 -0.85 0.025
+                0.15 -0.85 0.025
+                0.15 0.85 0.025
+                0.15 0.85 -0.025
+                0.15 -0.85 -0.025
+                -0.15 -0.85 -0.025
+                -0.15 0.85 -0.025
+                -0.15 0.85 -0.025
+                -0.15 -0.85 -0.025
+                -0.15 -0.85 0.025
+                -0.15 0.85 0.025
+                0.15 -0.85 -0.025
+                0.15 0.85 -0.025
+                0.15 0.85 0.025
+                0.15 -0.85 0.025
+                0.15 0.85 -0.025
+                -0.15 0.85 -0.025
+                -0.15 0.85 0.025
+                0.15 0.85 0.025
+                -0.15 -0.85 -0.025
+                0.15 -0.85 -0.025
+                0.15 -0.85 0.025
+                -0.15 -0.85 0.025
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                1 0
+                1 0.17647058823529
+                0 0.17647058823529
+                0 0
+                1 0
+                1 0.17647058823529
+                0 0.17647058823529
+                0 0
+                1 0
+                1 0.029411764705882
+                0 0.029411764705882
+                0 0
+                1 0
+                1 0.029411764705882
+                0 0.029411764705882
+                0 0
+                0.17647058823529 0
+                0.17647058823529 0.029411764705882
+                0 0.029411764705882
+                0 0
+                0.17647058823529 0
+                0.17647058823529 0.029411764705882
+                0 0.029411764705882
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "top frame"
+      model "box"
+      boundingObject Box {
+        size 0.3 1.7 0.05
+      }
+    }
+    Solid {
+      translation 0 0.875 1
+      rotation 0 0 1 -3.1415853071795863
+      children [
+        Shape {
+          appearance USE DOUBLE_DOOR_APPEARANCE
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.15 0.025 1
+                -0.15 -0.025 1
+                0.15 -0.025 1
+                0.15 0.025 1
+                0.15 0.025 -1
+                0.15 -0.025 -1
+                -0.15 -0.025 -1
+                -0.15 0.025 -1
+                -0.15 0.025 -1
+                -0.15 -0.025 -1
+                -0.15 -0.025 1
+                -0.15 0.025 1
+                0.15 -0.025 -1
+                0.15 0.025 -1
+                0.15 0.025 1
+                0.15 -0.025 1
+                0.15 0.025 -1
+                -0.15 0.025 -1
+                -0.15 0.025 1
+                0.15 0.025 1
+                -0.15 -0.025 -1
+                0.15 -0.025 -1
+                0.15 -0.025 1
+                -0.15 -0.025 1
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "left frame"
+      model "box"
+      boundingObject Box {
+        size 0.3 0.05 2
+      }
+    }
+    Solid {
+      translation 0 -0.875 1
+      rotation 0 0 1 3.14159
+      children [
+        Shape {
+          appearance USE DOUBLE_DOOR_APPEARANCE
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.15 0.025 1
+                -0.15 -0.025 1
+                0.15 -0.025 1
+                0.15 0.025 1
+                0.15 0.025 -1
+                0.15 -0.025 -1
+                -0.15 -0.025 -1
+                -0.15 0.025 -1
+                -0.15 0.025 -1
+                -0.15 -0.025 -1
+                -0.15 -0.025 1
+                -0.15 0.025 1
+                0.15 -0.025 -1
+                0.15 0.025 -1
+                0.15 0.025 1
+                0.15 -0.025 1
+                0.15 0.025 -1
+                -0.15 0.025 -1
+                -0.15 0.025 1
+                0.15 0.025 1
+                -0.15 -0.025 -1
+                0.15 -0.025 -1
+                0.15 -0.025 1
+                -0.15 -0.025 1
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "right frame"
+      model "box"
+      boundingObject Box {
+        size 0.3 0.05 2
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3.622679402347427e-10
+        axis 0 0 1
+        anchor -0.15 -0.875 0
+        minStop -0.01
+        maxStop 1.57
+        dampingConstant 10
+      }
+      endPoint Solid {
+        translation -0.0010000053887354587 9.176248649822583e-10 0
+        children [
+          DEF BOX Transform {
+            translation -0.175 -0.43 1
+            rotation 0 0 1 -1.5708
+            children [
+              Shape {
+                appearance USE DOUBLE_DOOR_APPEARANCE
+                geometry Box {
+                  size 0.875 0.05 1.97
+                }
+              }
+            ]
+          }
+          Solid {
+            translation -0.175 -0.09 1
+            children [
+              DEF HANDLE_SUPPORT Transform {
+                rotation 0 -1 0 1.57
+                children [
+                  Shape {
+                    appearance BrushedAluminium {
+                    }
+                    geometry Cylinder {
+                      height 0.075
+                      radius 0.0375
+                    }
+                  }
+                ]
+              }
+              DEF HANDLE_AXIS Transform {
+                rotation 0 -1 0 1.57
+                children [
+                  Shape {
+                    appearance BrushedAluminium {
+                    }
+                    geometry Capsule {
+                      height 0.18
+                      radius 0.0125
+                    }
+                  }
+                ]
+              }
+              DEF BACK_HANDLE Transform {
+                translation 0.09 -0.06 0
+                rotation -1 0 0 1.57
+                children [
+                  Shape {
+                    appearance BrushedAluminium {
+                    }
+                    geometry Capsule {
+                      height 0.12
+                      radius 0.0125
+                    }
+                  }
+                ]
+              }
+              DEF FRONT_HANDLE Transform {
+                translation -0.09 -0.06 0
+                rotation -1 0 0 1.57
+                children [
+                  Shape {
+                    appearance BrushedAluminium {
+                    }
+                    geometry Capsule {
+                      height 0.12
+                      radius 0.0125
+                    }
+                  }
+                ]
+              }
+            ]
+            name "door lever(1)"
+            model "door lever"
+            boundingObject Group {
+              children [
+                USE HANDLE_SUPPORT
+                USE HANDLE_AXIS
+                USE BACK_HANDLE
+                USE FRONT_HANDLE
+              ]
+            }
+            physics Physics {
+              density -1
+              mass 0.7
+            }
+          }
+        ]
+        boundingObject USE BOX
+        physics Physics {
+          density 200
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3.489588476481733e-10
+        axis 0 0 -1
+        anchor -0.15 0.875 0
+        minStop -0.01
+        maxStop 1.57
+        dampingConstant 10
+      }
+      endPoint Solid {
+        translation -0.0009999999703384221 0.8799999991160875 0
+        rotation 0 0 -1 0
+        children [
+          DEF BOX Transform {
+            translation -0.175 -0.43 1
+            rotation 0 0 1 -1.5708
+            children [
+              Shape {
+                appearance USE DOUBLE_DOOR_APPEARANCE
+                geometry Box {
+                  size 0.875 0.05 1.97
+                }
+              }
+            ]
+          }
+          Transform {
+            translation -0.175 -0.09 1
+            children [
+              Solid {
+                translation 0 -0.69 0
+                rotation -1 0 0 3.141592644
+                children [
+                  DEF HANDLE_SUPPORT Transform {
+                    rotation 0 -1 0 1.57
+                    children [
+                      Shape {
+                        appearance BrushedAluminium {
+                        }
+                        geometry Cylinder {
+                          height 0.075
+                          radius 0.0375
+                        }
+                      }
+                    ]
+                  }
+                  DEF HANDLE_AXIS Transform {
+                    rotation 0 -1 0 1.57
+                    children [
+                      Shape {
+                        appearance BrushedAluminium {
+                        }
+                        geometry Capsule {
+                          height 0.18
+                          radius 0.0125
+                        }
+                      }
+                    ]
+                  }
+                  DEF BACK_HANDLE Transform {
+                    translation 0.09 -0.06 0
+                    rotation -1 0 0 1.57
+                    children [
+                      Shape {
+                        appearance BrushedAluminium {
+                        }
+                        geometry Capsule {
+                          height 0.12
+                          radius 0.0125
+                        }
+                      }
+                    ]
+                  }
+                  DEF FRONT_HANDLE Transform {
+                    translation -0.09 -0.06 0
+                    rotation -1 0 0 1.57
+                    children [
+                      Shape {
+                        appearance BrushedAluminium {
+                        }
+                        geometry Capsule {
+                          height 0.12
+                          radius 0.0125
+                        }
+                      }
+                    ]
+                  }
+                ]
+                name "door lever(1)"
+                model "door lever"
+                boundingObject Group {
+                  children [
+                    USE HANDLE_SUPPORT
+                    USE HANDLE_AXIS
+                    USE BACK_HANDLE
+                    USE FRONT_HANDLE
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.7
+                }
+              }
+            ]
+          }
+          Transform {
+            translation -0.21 -0.23 1.36
+            rotation 0.5773502691896257 -0.5773502691896257 -0.5773502691896257 2.0943951024
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColorMap ImageTexture {
+                    url [
+                      "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/ears_protection_pannel.png"
+                    ]
+                  }
+                  roughness 0.2
+                  metalness 0
+                }
+                geometry Plane {
+                  size 0.2 0.2
+                }
+              }
+            ]
+          }
+          Transform {
+            translation -0.21 -0.51 1.36
+            rotation 0.5773502691896257 -0.5773502691896257 -0.5773502691896257 2.0943951024
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColorMap ImageTexture {
+                    url [
+                      "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/glasses_panel.png"
+                    ]
+                  }
+                  roughness 0.2
+                  metalness 0
+                }
+                geometry Plane {
+                  size 0.2 0.2
+                }
+              }
+            ]
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE BOX
+        physics Physics {
+          density 200
+        }
+      }
+    }
+  ]
+  name "door(3)"
+  model "door"
+}
+Window {
+  translation -3.575 0.665 0
+  size 0.2 1.6 3.652
+  windowSillSize 0.1 0
+  wallAppearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.8 0.8
+    }
+  }
+  frameAppearance GlossyPaint {
+    baseColor 0.58 0.52 0.473
+  }
+}
+Radiator {
+  translation -3.355 0.985 0.37
+  numberOfFins 30
+}
+Window {
+  translation -3.575 9.529 0
+  name "window(1)"
+  size 0.2 1.6 3.652
+  windowSillSize 0.1 0
+  wallAppearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.8 0.8
+    }
+  }
+  frameAppearance GlossyPaint {
+    baseColor 0.58 0.52 0.47
+  }
+}
+Radiator {
+  translation -3.365 9.249 0.33
+  name "radiator(2)"
+}
+Wall {
+  translation 3.575 0.193 0
+  name "wall(9)"
+  size 0.2 0.65 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.325 1.8
+    }
+  }
+}
+Wall {
+  translation 3.575 6.468 0
+  name "wall(10)"
+  size 0.2 0.5 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.25 1.8
+    }
+  }
+}
+Door {
+  translation 3.575 7.218 0
+  rotation 0 0 1 3.14159
+  name "door(1)"
+  size 0.2 1 3.652
+  position -2.5076140196063606e-07
+  jointAtLeft FALSE
+  selfClosing TRUE
+  doorAppearance GlossyPaint {
+    baseColor 0.58 0.52 0.47
+  }
+  wallAppearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.5 0.7
+    }
+  }
+  frameAppearance GlossyPaint {
+    baseColor 0.58 0.52 0.47
+  }
+  doorHandle DoorLever {
+    canTurn TRUE
+    jointAtLeft FALSE
+  }
+  doorSlot [
+    Transform {
+      translation 0.027 -0.32 0.024
+      children [
+        Shape {
+          appearance ThreadMetalPlate {
+            textureTransform TextureTransform {
+              rotation 1.5708
+              scale 0.5 0.5
+            }
+            IBLStrength 1.6
+          }
+          geometry Box {
+            size 0.006 0.3 0.3
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.024 0 -0.554
+      children [
+        Shape {
+          appearance ThreadMetalPlate {
+            textureTransform TextureTransform {
+              scale 1.4 1.3
+            }
+            IBLStrength 2
+          }
+          geometry Box {
+            size 0.006 0.94 0.86
+          }
+        }
+      ]
+    }
+  ]
+}
+Wall {
+  translation 3.575 9.518 0
+  name "wall(3)"
+  size 0.2 3.6 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 1.8 1.8
+    }
+  }
+}
+DEF WINDOW_DOOR_BLOCK Transform {
+  translation 3.575 5.218 0
+  rotation 0 0 1 3.141592644
+  children [
+    Door {
+      hidden translation_5 0.0010000024341336455 -7.635492238478037e-10 0
+      rotation 0 0 1 3.14159
+      name "door(4)"
+      size 0.2 1 3
+      position 5.693880114893743e-10
+      jointAtLeft FALSE
+      doorAppearance GlossyPaint {
+        baseColor 0.58 0.52 0.47
+      }
+      wallAppearance DEF WALL_PLASTIC_APPEARANCE PBRAppearance {
+        baseColor 0.813 0.781 0.753
+        roughnessMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/plastic_roughness.jpg"
+          ]
+        }
+        metalness 0
+        textureTransform TextureTransform {
+          scale 0.5 0.7
+        }
+      }
+      frameAppearance BrushedAluminium {
+      }
+      doorHandle DoorLever {
+        jointAtLeft FALSE
+      }
+    }
+    Wall {
+      translation 0 -0.75 0
+      name "wall(13)"
+      size 0.2 0.5 3
+      appearance USE WALL_PLASTIC_APPEARANCE
+    }
+    Window {
+      translation 0 1 0
+      name "window(2)"
+      size 0.2 1 3
+      windowHeight 1.6
+      windowSillSize 0.1 0
+      wallAppearance USE WALL_PLASTIC_APPEARANCE
+      frameAppearance BrushedAluminium {
+      }
+    }
+    Window {
+      translation 0 2 0
+      name "window(3)"
+      size 0.2 1 3
+      windowHeight 1.6
+      windowSillSize 0.1 0
+      wallAppearance USE WALL_PLASTIC_APPEARANCE
+      frameAppearance BrushedAluminium {
+      }
+    }
+    Window {
+      translation 0 3 0
+      name "window(4)"
+      size 0.2 1 3
+      windowHeight 1.6
+      windowSillSize 0.1 0
+      wallAppearance USE WALL_PLASTIC_APPEARANCE
+      frameAppearance BrushedAluminium {
+      }
+    }
+    Window {
+      translation 0 4 0
+      name "window(5)"
+      size 0.2 1 3
+      windowHeight 1.6
+      windowSillSize 0.1 0
+      wallAppearance USE WALL_PLASTIC_APPEARANCE
+      frameAppearance BrushedAluminium {
+      }
+    }
+    Wall {
+      translation 0 4.6 0
+      name "wall(14)"
+      size 0.2 0.2 3
+      appearance USE WALL_PLASTIC_APPEARANCE
+    }
+    Wall {
+      translation 0 1.85 3
+      name "wall(15)"
+      size 0.2 5.7 0.652
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 2.85 0.3
+        }
+      }
+    }
+    Transform {
+      translation 0.1 1.85 3
+      children [
+        Shape {
+          appearance DEF WALL_JOINT_APPEARANCE PBRAppearance {
+            baseColor 0.063 0.004 0.004
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 5.7 0.02
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 1.85 2.405
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 5.7 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 -0.505 1.5
+      rotation -1 0 0 1.570796322
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 3 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 0.495 1.5
+      rotation -1 0 0 1.570796322
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 3 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 -0.995 1.5
+      rotation -1 0 0 1.570796322
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 3 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 1.5 1.5
+      rotation -1 0 0 1.570796322
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 3 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 2.5 1.5
+      rotation -1 0 0 1.570796322
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 3 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 3.5 1.5
+      rotation -1 0 0 1.570796322
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 3 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 4.5 1.5
+      rotation -1 0 0 1.570796322
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 3 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.1 4.695 1.5
+      rotation -1 0 0 1.570796322
+      children [
+        Shape {
+          appearance USE WALL_JOINT_APPEARANCE
+          geometry Box {
+            size 0.02 3 0.01
+          }
+        }
+      ]
+    }
+  ]
+}
+Wall {
+  translation -3.575 10.829 0
+  name "wall(7)"
+  size 0.2 1 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.5 1.8
+    }
+  }
+}
+Wall {
+  translation -3.575 7.669 0
+  name "wall(4)"
+  size 0.2 2.12 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 1.06 1.8
+    }
+  }
+}
+Wall {
+  translation -3.495 5.099 0
+  name "wall(16)"
+  size 0.1 3.05 3.652
+  appearance CorrugatedMetal {
+    colorOverride 0.372 0.72 0.295
+    textureTransform TextureTransform {
+      scale 0.76 0.94
+    }
+  }
+}
+Wall {
+  translation -3.575 2.525 0
+  name "wall(12)"
+  size 0.2 2.12 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 1.06 1.8
+    }
+  }
+}
+Wall {
+  translation -3.575 -10.235 0
+  name "wall(2)"
+  size 0.2 1.8 4.76
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.9 2.4
+    }
+  }
+}
+OfficeTelephone {
+  translation -3.41935 -7.3308 0.8825
+  rotation 0 -1 0 -0.523595307179586
+  name "telephone(1)"
+  enablePhysics FALSE
+}
+DEF DOUBLE_DOOR Solid {
+  translation -3.575 -8.435 0
+  rotation 0 0 -1 3.1415926631795865
+  children [
+    Solid {
+      translation 0 0 3.38
+      children [
+        Shape {
+          appearance Plaster {
+            textureTransform TextureTransform {
+              scale 0.9 1.35
+            }
+          }
+          geometry Box {
+            size 0.2 1.8 2.76
+          }
+        }
+      ]
+      name "mobile part"
+      boundingObject Box {
+        size 0.2 1.8 2.76
+      }
+    }
+    Solid {
+      translation 0 0 1.975
+      children [
+        Shape {
+          appearance DEF DOUBLE_DOOR_APPEARANCE GlossyPaint {
+            baseColor 0.58 0.52 0.47
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.15 0.85 0.025
+                -0.15 -0.85 0.025
+                0.15 -0.85 0.025
+                0.15 0.85 0.025
+                0.15 0.85 -0.025
+                0.15 -0.85 -0.025
+                -0.15 -0.85 -0.025
+                -0.15 0.85 -0.025
+                -0.15 0.85 -0.025
+                -0.15 -0.85 -0.025
+                -0.15 -0.85 0.025
+                -0.15 0.85 0.025
+                0.15 -0.85 -0.025
+                0.15 0.85 -0.025
+                0.15 0.85 0.025
+                0.15 -0.85 0.025
+                0.15 0.85 -0.025
+                -0.15 0.85 -0.025
+                -0.15 0.85 0.025
+                0.15 0.85 0.025
+                -0.15 -0.85 -0.025
+                0.15 -0.85 -0.025
+                0.15 -0.85 0.025
+                -0.15 -0.85 0.025
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                1 0
+                1 0.17647058823529
+                0 0.17647058823529
+                0 0
+                1 0
+                1 0.17647058823529
+                0 0.17647058823529
+                0 0
+                1 0
+                1 0.029411764705882
+                0 0.029411764705882
+                0 0
+                1 0
+                1 0.029411764705882
+                0 0.029411764705882
+                0 0
+                0.17647058823529 0
+                0.17647058823529 0.029411764705882
+                0 0.029411764705882
+                0 0
+                0.17647058823529 0
+                0.17647058823529 0.029411764705882
+                0 0.029411764705882
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "top frame"
+      model "box"
+      boundingObject Box {
+        size 0.3 1.7 0.05
+      }
+    }
+    Solid {
+      translation 0 0.875 1
+      children [
+        Shape {
+          appearance USE DOUBLE_DOOR_APPEARANCE
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.15 0.025 1
+                -0.15 -0.025 1
+                0.15 -0.025 1
+                0.15 0.025 1
+                0.15 0.025 -1
+                0.15 -0.025 -1
+                -0.15 -0.025 -1
+                -0.15 0.025 -1
+                -0.15 0.025 -1
+                -0.15 -0.025 -1
+                -0.15 -0.025 1
+                -0.15 0.025 1
+                0.15 -0.025 -1
+                0.15 0.025 -1
+                0.15 0.025 1
+                0.15 -0.025 1
+                0.15 0.025 -1
+                -0.15 0.025 -1
+                -0.15 0.025 1
+                0.15 0.025 1
+                -0.15 -0.025 -1
+                0.15 -0.025 -1
+                0.15 -0.025 1
+                -0.15 -0.025 1
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "left frame"
+      model "box"
+      boundingObject Box {
+        size 0.3 0.05 2
+      }
+    }
+    Solid {
+      translation 0 -0.875 1
+      children [
+        Shape {
+          appearance USE DOUBLE_DOOR_APPEARANCE
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.15 0.025 1
+                -0.15 -0.025 1
+                0.15 -0.025 1
+                0.15 0.025 1
+                0.15 0.025 -1
+                0.15 -0.025 -1
+                -0.15 -0.025 -1
+                -0.15 0.025 -1
+                -0.15 0.025 -1
+                -0.15 -0.025 -1
+                -0.15 -0.025 1
+                -0.15 0.025 1
+                0.15 -0.025 -1
+                0.15 0.025 -1
+                0.15 0.025 1
+                0.15 -0.025 1
+                0.15 0.025 -1
+                -0.15 0.025 -1
+                -0.15 0.025 1
+                0.15 0.025 1
+                -0.15 -0.025 -1
+                0.15 -0.025 -1
+                0.15 -0.025 1
+                -0.15 -0.025 1
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "right frame"
+      model "box"
+      boundingObject Box {
+        size 0.3 0.05 2
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3.6226036516407693e-10
+        axis 0 0 1
+        anchor -0.15 -0.875 0
+        minStop -0.01
+        maxStop 1.57
+        dampingConstant 10
+      }
+      endPoint Solid {
+        translation -0.0010000053886231597 9.176059911908396e-10 0
+        children [
+          DEF BOX Transform {
+            translation -0.175 -0.43 1
+            rotation 0 0 1 -1.5708
+            children [
+              Shape {
+                appearance USE DOUBLE_DOOR_APPEARANCE
+                geometry Box {
+                  size 0.875 0.05 1.97
+                }
+              }
+            ]
+          }
+          Solid {
+            translation -0.175 -0.09005 1
+            children [
+              DEF HANDLE_SUPPORT Transform {
+                rotation 0 -1 0 1.57
+                children [
+                  Shape {
+                    appearance BrushedAluminium {
+                    }
+                    geometry Cylinder {
+                      height 0.075
+                      radius 0.0375
+                    }
+                  }
+                ]
+              }
+              DEF HANDLE_AXIS Transform {
+                rotation 0 -1 0 1.57
+                children [
+                  Shape {
+                    appearance BrushedAluminium {
+                    }
+                    geometry Capsule {
+                      height 0.18
+                      radius 0.0125
+                    }
+                  }
+                ]
+              }
+              DEF BACK_HANDLE Transform {
+                translation 0.09 -0.06 0
+                rotation -1 0 0 1.57
+                children [
+                  Shape {
+                    appearance BrushedAluminium {
+                    }
+                    geometry Capsule {
+                      height 0.12
+                      radius 0.0125
+                    }
+                  }
+                ]
+              }
+              DEF FRONT_HANDLE Transform {
+                translation -0.09 -0.06 0
+                rotation -1 0 0 1.57
+                children [
+                  Shape {
+                    appearance BrushedAluminium {
+                    }
+                    geometry Capsule {
+                      height 0.12
+                      radius 0.0125
+                    }
+                  }
+                ]
+              }
+            ]
+            name "door lever(1)"
+            model "door lever"
+            boundingObject Group {
+              children [
+                USE HANDLE_SUPPORT
+                USE HANDLE_AXIS
+                USE BACK_HANDLE
+                USE FRONT_HANDLE
+              ]
+            }
+            physics Physics {
+              density -1
+              mass 0.7
+            }
+          }
+        ]
+        boundingObject USE BOX
+        physics Physics {
+          density 200
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3.489579013096348e-10
+        axis 0 0 -1
+        anchor -0.15 0.875 0
+        minStop -0.01
+        maxStop 1.57
+        dampingConstant 10
+      }
+      endPoint Solid {
+        translation -0.0009999999703384221 0.8799999991160894 0
+        rotation 0 0 -1 0
+        children [
+          DEF BOX Transform {
+            translation -0.175 -0.43 1
+            rotation 0 0 1 -1.5708
+            children [
+              Shape {
+                appearance USE DOUBLE_DOOR_APPEARANCE
+                geometry Box {
+                  size 0.875 0.05 1.97
+                }
+              }
+            ]
+          }
+          Transform {
+            translation -0.175 -0.09 1
+            children [
+              Solid {
+                translation 0 -0.69 0
+                rotation -1 0 0 3.141592644
+                children [
+                  DEF HANDLE_SUPPORT Transform {
+                    rotation 0 -1 0 1.57
+                    children [
+                      Shape {
+                        appearance BrushedAluminium {
+                        }
+                        geometry Cylinder {
+                          height 0.075
+                          radius 0.0375
+                        }
+                      }
+                    ]
+                  }
+                  DEF HANDLE_AXIS Transform {
+                    rotation 0 -1 0 1.57
+                    children [
+                      Shape {
+                        appearance BrushedAluminium {
+                        }
+                        geometry Capsule {
+                          height 0.18
+                          radius 0.0125
+                        }
+                      }
+                    ]
+                  }
+                  DEF BACK_HANDLE Transform {
+                    translation 0.09 -0.06 0
+                    rotation -1 0 0 1.57
+                    children [
+                      Shape {
+                        appearance BrushedAluminium {
+                        }
+                        geometry Capsule {
+                          height 0.12
+                          radius 0.0125
+                        }
+                      }
+                    ]
+                  }
+                  DEF FRONT_HANDLE Transform {
+                    translation -0.09 -0.06 0
+                    rotation -1 0 0 1.57
+                    children [
+                      Shape {
+                        appearance BrushedAluminium {
+                        }
+                        geometry Capsule {
+                          height 0.12
+                          radius 0.0125
+                        }
+                      }
+                    ]
+                  }
+                ]
+                name "door lever(1)"
+                model "door lever"
+                boundingObject Group {
+                  children [
+                    USE HANDLE_SUPPORT
+                    USE HANDLE_AXIS
+                    USE BACK_HANDLE
+                    USE FRONT_HANDLE
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.7
+                }
+              }
+            ]
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE BOX
+        physics Physics {
+          density 200
+        }
+      }
+    }
+  ]
+  name "door(5)"
+  model "door"
+}
+Wall {
+  translation -1.9 -11.2255 0
+  rotation 0 0 1 1.5707963219999999
+  name "wall(1)"
+  size 0.2 3.6 4.76
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 1.8 2.4
+    }
+  }
+}
+Wall {
+  translation 3.4853 -11.2255 0
+  rotation 0 0 1 1.5707963219999999
+  name "wall(17)"
+  size 0.2 0.37 4.76
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.17 2.4
+    }
+  }
+}
+Transform {
+  translation 0.98534 -12.89547 1.47
+  rotation 0 -0.7071067761007915 -0.7071067862723036 3.1415926332467694
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/samples/environments/factory/worlds/textures/hedges.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+        textureTransform TextureTransform {
+          scale 1.5 3
+        }
+      }
+      geometry Plane {
+        size 6 3
+      }
+    }
+  ]
+}
+Transform {
+  translation 0.98534 -11.87547 1.47
+  rotation 0 -0.7071067761007915 -0.7071067862723036 3.1415926332467694
+  children [
+    Shape {
+      appearance WireFence {
+        textureTransform TextureTransform {
+          scale 3 5
+        }
+      }
+      geometry Plane {
+        size 6 3
+      }
+    }
+  ]
+}
+DEF WINDOWS Transform {
+  translation 0.32534 -11.22547 0
+  rotation 0 0 1 1.5707963219999999
+  children [
+    Window {
+      name "window(7)"
+      size 0.2 0.85 4.76
+      bottomWallHeight 1.2
+      windowHeight 1.1
+      windowSillSize 0.1 0
+      wallAppearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.42 1.4
+        }
+      }
+      frameAppearance GlossyPaint {
+        baseColor 0.58 0.52 0.47
+      }
+    }
+    Window {
+      translation 0 -0.85 0
+      name "window(6)"
+      size 0.2 0.85 4.76
+      bottomWallHeight 1.2
+      windowHeight 1.1
+      windowSillSize 0.1 0
+      wallAppearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.42 1.4
+        }
+      }
+      frameAppearance GlossyPaint {
+        baseColor 0.58 0.52 0.47
+      }
+    }
+    Window {
+      translation 0 -1.7 0
+      name "window(8)"
+      size 0.2 0.85 4.76
+      bottomWallHeight 1.2
+      windowHeight 1.1
+      windowSillSize 0.1 0
+      wallAppearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.42 1.4
+        }
+      }
+      frameAppearance GlossyPaint {
+        baseColor 0.58 0.52 0.47
+      }
+    }
+    Window {
+      translation 0 -2.55 0
+      name "window(9)"
+      size 0.2 0.85 4.76
+      bottomWallHeight 1.2
+      windowHeight 1.1
+      windowSillSize 0.1 0
+      wallAppearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.42 1.4
+        }
+      }
+      frameAppearance GlossyPaint {
+        baseColor 0.58 0.52 0.47
+      }
+    }
+  ]
+}
+Radiator {
+  translation 2.7753 -11.015 0.4
+  rotation 0 0 -1 -1.5707953071795862
+  name "radiator(1)"
+  numberOfFins 30
+}
+DEF BLACK_TILES Transform {
+  translation 0 -11.13 3.35
+  rotation 0 0 1 1.5707963219999999
+  children [
+    Shape {
+      appearance Pavement {
+        type "grid"
+        textureTransform TextureTransform {
+          scale 12.6 2
+        }
+      }
+      geometry Box {
+        size 0.1 6.3 1
+      }
+    }
+  ]
+}
+Door {
+  hidden translation_5 0.001000002434133146 -7.635492238478037e-10 0
+  translation 2.4249 11.23 0
+  rotation 0 0 1 1.5708
+  name "door(2)"
+  size 0.2 1 3.652
+  position 5.693878581258537e-10
+  jointAtLeft FALSE
+  doorAppearance GlossyPaint {
+    baseColor 0.58 0.52 0.47
+  }
+  wallAppearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.5 0.7
+    }
+  }
+  frameAppearance GlossyPaint {
+    baseColor 0.58 0.52 0.47
+  }
+  doorHandle DoorLever {
+    jointAtLeft FALSE
+  }
+}
+Wall {
+  translation -0.7751 11.23 0
+  rotation 0 0 -1 1.570796360359173
+  name "wall(5)"
+  size 0.2 5.3999999999999995 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 2.7 1.8
+    }
+  }
+}
+Wall {
+  translation 5.165845 -0.031621 0
+  rotation 0 0 -1 1.570796360359173
+  name "wall(19)"
+  size 0.2 3 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 1.5 1.8
+    }
+  }
+}
+Wall {
+  translation 5.16584519 6.36837876 0
+  rotation 0 0 -1 1.570796360359173
+  name "wall(18)"
+  size 0.2 3 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 1.5 1.8
+    }
+  }
+}
+Wall {
+  translation 6.565845 3.178378 0
+  rotation 0 0 1 3.1415926056408265
+  name "wall(20)"
+  size 0.2 6.3 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 3.15 1.8
+    }
+  }
+}
+Wall {
+  translation 3.1998 11.23 0
+  rotation 0 0 -1 1.570796360359173
+  name "wall(6)"
+  size 0.2 0.55 3.652
+  appearance Plaster {
+    textureTransform TextureTransform {
+      scale 0.25 1.8
+    }
+  }
+}
+DEF POLE Solid {
+  translation -0.288453 -0.38188 2.38
+  children [
+    DEF SHAPE Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.6 3
+        }
+      }
+      geometry Box {
+        size 0.2 0.5 4.76
+      }
+    }
+  ]
+  name "pole"
+  boundingObject USE SHAPE
+}
+WoodenPallet {
+  translation -1.16955 -2.6595075 0.582787
+  rotation 0.5199879354078081 0.5199879428876736 0.6776614835460036 4.3327442878028455
+}
+WoodenPallet {
+  translation -0.94955 -2.506854 0.592632
+  rotation 0.5199879354078081 0.5199879428876736 0.6776614835460036 4.3327442878028455
+  name "wooden pallet(1)"
+}
+WoodenPallet {
+  translation -0.94955 -2.18572 0.528485
+  rotation -0.44721358244234816 -0.4472135915400251 -0.7745966790665659 1.823476581027718
+  name "wooden pallet(2)"
+}
+WoodenPallet {
+  translation -0.94955 -1.897164 0.348677
+  rotation 0 0.49999999031082765 0.8660254093784849 3.141592630960774
+  name "wooden pallet(3)"
+}
+Solid {
+  translation 0.074497 0.237277 0
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0.03 0.27 0.03
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 0.29 0.75
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.01 0.015
+          }
+        }
+      ]
+      name "solid(18)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.39 0 0.75
+      rotation 0 0 1 1.5708
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.572 0.01 0.015
+          }
+        }
+      ]
+      name "solid(20)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.08 0 0.75
+      rotation 0 0 1 1.5708
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.572 0.01 0.015
+          }
+        }
+      ]
+      name "solid(21)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 -0.29 0.75
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.01 0.015
+          }
+        }
+      ]
+      name "solid(19)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.805 0.27 0.011
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.2 0.05 0.023
+          }
+        }
+      ]
+      name "solid(10)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.88 0.27 0.645
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.05 0.05 1.22
+          }
+        }
+      ]
+      name "solid(14)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.95 0.27 0.645
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.05 0.05 1.22
+          }
+        }
+      ]
+      name "solid(17)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.88 -0.27 0.645
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.05 0.05 1.22
+          }
+        }
+      ]
+      name "solid(15)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.95 -0.27 0.645
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.05 0.05 1.22
+          }
+        }
+      ]
+      name "solid(16)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.875 0.27 0.011
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.2 0.05 0.023
+          }
+        }
+      ]
+      name "solid(12)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.875 -0.27 0.011
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.2 0.05 0.023
+          }
+        }
+      ]
+      name "solid(13)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.805 -0.27 0.011
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.2 0.05 0.023
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.88 0 0.03
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.59 0.05 0.0151
+          }
+        }
+      ]
+      name "solid(6)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.88 0 1.26
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.59 0.05 0.0151
+          }
+        }
+      ]
+      name "solid(8)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.95 0 0.03
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.59 0.05 0.0151
+          }
+        }
+      ]
+      name "solid(7)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.95 0 1.26
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.59 0.05 0.0151
+          }
+        }
+      ]
+      name "solid(9)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 0.27 1.26
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 0.09 0.03
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 -0.09 0.03
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 -0.27 0.03
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(3)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 -0.27 1.26
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE SHAPE
+    }
+  ]
+  name "solid(23)"
+}
+Solid {
+  translation -0.0054975 -5.41272 0
+  rotation 0 0 1 -1.5707953071795862
+  scale 0.8 0.8 0.8
+  children [
+    Solid {
+      translation 0.03 0.27 0.03
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 0.29 0.75
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.01 0.015
+          }
+        }
+      ]
+      name "solid(18)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.28 0 0.75
+      rotation 0 0 1 1.5708
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.572 0.01 0.015
+          }
+        }
+      ]
+      name "solid(20)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.49 0 0.75
+      rotation 0 0 1 1.5708
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.572 0.01 0.015
+          }
+        }
+      ]
+      name "solid(21)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.805 0.27 0.011
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.2 0.05 0.023
+          }
+        }
+      ]
+      name "solid(10)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.88 0.27 0.645
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.05 0.05 1.22
+          }
+        }
+      ]
+      name "solid(14)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.95 0.27 0.645
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.05 0.05 1.22
+          }
+        }
+      ]
+      name "solid(17)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.88 -0.27 0.645
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.05 0.05 1.22
+          }
+        }
+      ]
+      name "solid(15)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.95 -0.27 0.645
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.05 0.05 1.22
+          }
+        }
+      ]
+      name "solid(16)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.875 0.27 0.011
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.2 0.05 0.023
+          }
+        }
+      ]
+      name "solid(12)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.875 -0.27 0.011
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.2 0.05 0.023
+          }
+        }
+      ]
+      name "solid(13)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.805 -0.27 0.011
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.2 0.05 0.023
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.88 0 0.03
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.59 0.05 0.0151
+          }
+        }
+      ]
+      name "solid(6)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation -0.88 0 1.26
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.59 0.05 0.0151
+          }
+        }
+      ]
+      name "solid(8)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.95 0 0.03
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.59 0.05 0.0151
+          }
+        }
+      ]
+      name "solid(7)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.95 0 1.26
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 0.59 0.05 0.0151
+          }
+        }
+      ]
+      name "solid(9)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 0.27 1.26
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 0.09 0.03
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 -0.09 0.03
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 -0.27 0.03
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(3)"
+      boundingObject USE SHAPE
+    }
+    Solid {
+      translation 0.03 -0.27 1.26
+      children [
+        DEF SHAPE Shape {
+          appearance BrushedAluminium {
+          }
+          geometry Box {
+            size 1.8 0.05 0.015
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE SHAPE
+    }
+  ]
+  name "solid(9)"
+}
+DEF POLE Solid {
+  translation -0.25845 -11.07188 2.38
+  children [
+    DEF SHAPE Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.6 3
+        }
+      }
+      geometry Box {
+        size 0.25 0.4 4.76
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE SHAPE
+}
+DEF GIRDER Solid {
+  translation -0.2884 -5.882 4.3269
+  rotation -1 0 0 1.570796322
+  children [
+    DEF SHAPE Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.9 13
+        }
+      }
+      geometry Box {
+        size 0.2 0.866 10.5
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE SHAPE
+}
+DEF GIRDER Solid {
+  translation -0.01845 -9.952 4.3269
+  rotation 0.5773502627301778 -0.5773502738035171 0.5773502710351824 4.188790199249721
+  children [
+    DEF SHAPE Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.9 13
+        }
+      }
+      geometry Box {
+        size 0.15 0.866 7.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE SHAPE
+}
+DoubleFluorescentLamp {
+  translation 2.8615 -9.952 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+}
+DoubleFluorescentLamp {
+  translation 2.8615 -8.052 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(6)"
+}
+DoubleFluorescentLamp {
+  translation 1.7115 -8.052 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(8)"
+}
+DoubleFluorescentLamp {
+  translation 0.5615 -8.052 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(9)"
+}
+DoubleFluorescentLamp {
+  translation -0.58845 -8.052 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(10)"
+}
+DoubleFluorescentLamp {
+  translation -1.7384 -8.052 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(11)"
+}
+DoubleFluorescentLamp {
+  translation -2.8784 -8.052 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(12)"
+}
+DoubleFluorescentLamp {
+  translation 2.8615 -6.152 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(7)"
+}
+DoubleFluorescentLamp {
+  translation 1.7115 -6.152 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(13)"
+}
+DoubleFluorescentLamp {
+  translation 0.5615 -6.152 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(14)"
+}
+DoubleFluorescentLamp {
+  translation -0.5984 -6.152 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(15)"
+}
+DoubleFluorescentLamp {
+  translation -1.7484 -6.152 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(16)"
+}
+DoubleFluorescentLamp {
+  translation -2.8984 -6.152 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(17)"
+}
+DoubleFluorescentLamp {
+  translation 1.7115 -9.952 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(1)"
+}
+DoubleFluorescentLamp {
+  translation 0.5615 -9.952 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(2)"
+}
+DoubleFluorescentLamp {
+  translation -0.5784 -9.952 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(3)"
+}
+DoubleFluorescentLamp {
+  translation -1.7384 -9.952 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(4)"
+}
+DoubleFluorescentLamp {
+  translation -2.8784 -9.952 3.9069
+  rotation -0.7071067811865476 0.7071067811865476 0 3.14159
+  name "double fuorescent lamp(5)"
+}
+DEF GIRDER Solid {
+  translation -0.018453 -8.0529 4.3269
+  rotation 0.5773502627301778 -0.5773502738035171 0.5773502710351824 4.188790199249721
+  children [
+    DEF SHAPE Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.9 13
+        }
+      }
+      geometry Box {
+        size 0.15 0.866 7.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE SHAPE
+}
+DEF GIRDER Solid {
+  translation -0.018453 -6.152 4.3269
+  rotation 0.5773502627301778 -0.5773502738035171 0.5773502710351824 4.188790199249721
+  children [
+    DEF SHAPE Shape {
+      appearance Plaster {
+        textureTransform TextureTransform {
+          scale 0.9 13
+        }
+      }
+      geometry Box {
+        size 0.15 0.866 7.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE SHAPE
+}
+WoodenBox {
+  translation 3.99435 0.3964655 0.3
+}
+WoodenChair {
+  translation 6.16174 5.30183 0
+  rotation 0 0 1 3.14159
+}
+OfficeChair {
+  translation 4.809189999668877 1.777040000355472 -0.0001288753942090548
+  rotation 6.304655064826409e-05 -2.6641364468168453e-05 0.999999997657685 2.356200001679788
+}
+OfficeChair {
+  translation 4.72895999952659 2.9782199998909786 -0.00012887539420902705
+  rotation 6.329201376596561e-05 7.87501212912775e-06 0.9999999979660525 -2.8797953076824756
+  name "office chair(1)"
+}
+OfficeChair {
+  translation 4.370639999535503 4.185600000142285 -0.00012887539420902705
+  rotation 6.317361279909645e-05 -8.7742210641091e-06 0.9999999979660538 2.8798000005499413
+  name "office chair(2)"
+}

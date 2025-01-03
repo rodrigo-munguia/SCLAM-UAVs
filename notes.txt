@@ -1,0 +1,52 @@
+
+reset project: 
+ rm -r build install log
+
+
+in ros_sclam/src:
+
+c++:
+ros2 pkg create --build-type ament_cmake --node-name mavic_driver mavic --dependencies rclpy geometry_msgs webots_ros2_driver
+
+ros2 pkg create --build-type ament_cmake --node-name control_component control
+
+
+python
+ros2 pkg create --build-type ament_python --node-name webot_robot_driver webot_package --dependencies rclpy geometry_msgs webots_ros2_driver
+
+
+ldd ./install/localslam/lib/liblocalslam_component.so
+
+
+. install/setup.bash
+ros2 launch launch/quad_slam.launch.py
+ros2 launch webot_package robot_launch.py
+ros2 run keyboard keyboard_node
+
+ros2 topic list
+
+
+requeriments
+- https://docs.ros.org/en/galactic/Installation.html
+- webots
+
+
+Compile
+
+- source /opt/ros/galactic/setup.bash
+- colcon build --packages-select interfaces
+- . install/setup.bash
+- colcon build
+- colcon build
+
+run
+- . install/setup.bash
+- ./launch.sh
+
+
+
+
+
+
+
+

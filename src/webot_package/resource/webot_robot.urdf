@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<robot name="webot_robot">
+    <webots>
+        <device reference="gps" type="GPS">
+            <ros>
+                <enabled>true</enabled>
+                <alwaysOn>true</alwaysOn>
+                <updateRate>30</updateRate>
+            </ros>
+        </device>
+
+        <device reference="camera" type="Camera">
+            <ros>
+                <topicName>/camera</topicName>
+                <updateRate>30</updateRate>                
+            </ros>
+        </device>
+     
+        <device reference="ds0" type="DistanceSensor">
+            <ros>
+                <topicName>/ds0</topicName>
+                <enabled>true</enabled>
+                <updateRate>10</updateRate>
+                <alwaysOn>true</alwaysOn>
+            </ros>
+        </device>
+
+        
+
+        <plugin type="webots_ros2_driver::Ros2IMU">
+            <enabled>true</enabled>
+            <topicName>/imu</topicName>
+            <alwaysOn>true</alwaysOn>
+            <frameName>imu_link</frameName>
+            <inertialUnitName>inertial unit</inertialUnitName>
+            <gyroName>gyro</gyroName>
+        </plugin>
+
+        <plugin type="webot_package.webot_robot_driver.MavicDriver" />
+    </webots>
+</robot>

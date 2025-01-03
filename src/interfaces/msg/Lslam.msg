@@ -1,0 +1,10 @@
+float64[] robot_state
+geometry_msgs/Transform r2c
+geometry_msgs/Transform n2r
+geometry_msgs/Point[] map_state
+geometry_msgs/Point[] map_anchors
+geometry_msgs/Point[] matched_img_feats
+geometry_msgs/Point[] unmatched_img_feats
+geometry_msgs/Point[] matched_img_anchors
+geometry_msgs/Point[] unmatched_img_anchors
+float64 radius_uncertainty

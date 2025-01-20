@@ -222,7 +222,7 @@ namespace webotbridge
     auto message_g = geometry_msgs::msg::PointStamped();
     message_g.point.x = gt_R[0];
     message_g.point.y  = -gt_R[1];
-    message_g.point.z  = -gt_R[2];
+    message_g.point.z  = -z;
     
     pub_GT_->publish(message_g);
 

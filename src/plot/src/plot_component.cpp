@@ -324,25 +324,29 @@ void PLOTscene::PLOT_LOOP()
             draw_localslam_trajectory(); 
 
             if(Plot_local_map)
-            {
-              if(EKFmap.rows > 0 && EKFmap_color.rows > 0)
-              {
-                try {
-                    cv::viz::WCloud cloud_local_map(EKFmap,EKFmap_color);
-                    cloud_local_map.setRenderingProperty(cv::viz::POINT_SIZE, 2);
-                    viewer.showWidget( "Cloud_feats", cloud_local_map );
-                  } 
-                catch (const std::exception &e) {
+            { 
+              try {
+                  if(EKFmap.rows > 0 && EKFmap_color.rows > 0)
+                    {                
+                      cv::viz::WCloud cloud_local_map(EKFmap,EKFmap_color);
+                      cloud_local_map.setRenderingProperty(cv::viz::POINT_SIZE, 2);
+                      viewer.showWidget( "Cloud_feats", cloud_local_map );
+                    } 
+              } catch (const std::exception &e) {
                     // Catch the exception and continue
                     std::cout << "Caught exception: " << e.what() << std::endl;
-                  }
               }
-              if(ANCHORSmap.rows > 0 && ANCHORSmap.rows > 0)
-              {
-                cv::viz::WCloud cloud_local_map_anchors(ANCHORSmap,ANCHORSmap_color);
-                cloud_local_map_anchors.setRenderingProperty(cv::viz::POINT_SIZE, 2);
-                viewer.showWidget( "Cloud_anchors", cloud_local_map_anchors );
-              }
+              
+              try { 
+                if(ANCHORSmap.rows > 0 && ANCHORSmap.rows > 0)
+                {                
+                  cv::viz::WCloud cloud_local_map_anchors(ANCHORSmap,ANCHORSmap_color);
+                  cloud_local_map_anchors.setRenderingProperty(cv::viz::POINT_SIZE, 2);
+                  viewer.showWidget( "Cloud_anchors", cloud_local_map_anchors );
+                }
+              } catch (const cv::Exception& e) {
+                    std::cerr << "OpenCV Exception: " << e.what() << std::endl;                    
+              }  
             }
             new_robot_pose_flag = false;
           }
@@ -369,13 +373,17 @@ void PLOTscene::PLOT_LOOP()
                   cv::viz::WCameraPosition kf_i_pos(Vec2f(0.889484, 0.523599),.05,cv::viz::Color::cyan());
                     viewer.showWidget(id,kf_i_pos,kf_poses[i]);
                         
-            }  
-            if(!Gmap.empty()&&!Gmap_color.empty())
-              {
-                cv::viz::WCloud cloud_local_map(Gmap,Gmap_color);
-                cloud_local_map.setRenderingProperty(cv::viz::POINT_SIZE, 1);
-                viewer.showWidget( "Gmap_anchors", cloud_local_map );
-              }         
+            } 
+            try { 
+                if(!Gmap.empty()&&!Gmap_color.empty())
+                  {
+                    cv::viz::WCloud cloud_local_map(Gmap,Gmap_color);
+                    cloud_local_map.setRenderingProperty(cv::viz::POINT_SIZE, 1);
+                    viewer.showWidget( "Gmap_anchors", cloud_local_map );
+                  }                
+            } catch (const cv::Exception& e) {
+                    std::cerr << "OpenCV Exception: " << e.what() << std::endl;                    
+            }         
           mutex_clear_get_gmap.unlock();
         }   
        

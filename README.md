@@ -3,7 +3,7 @@
 
 Ros 2 implementation of the Simultaneous Control Localization and Mapping (SCLAM) approach described in the paper:
 
-"A SCLAM System for UAVs in GPS-denied Environments" 
+"A SCLAM System for UAVs in GPS-denied Environments" (https://www.mdpi.com/2504-446X/9/1/69)
  
 
 ![](figures/Graphical_abstract.png)
